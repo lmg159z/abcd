@@ -1,5 +1,5 @@
 const menu = document.getElementById("menu")
-const menuJson = `https://lmg159z.github.io/soixamTV/json/sidebar.json`;
+const menuJson = `${GL_domain}json/sidebar.json`;
 fetch(menuJson)
   .then(response => {
     if (!response.ok) {
@@ -13,7 +13,7 @@ fetch(menuJson)
     ` 
     <a data-aos="fade-up"
      data-aos-duration="1000" 
-     href="https://lmg159z.github.io/soixamTV/${num.url}"><i><i class="${num.icon}"></i></i>${num.title}</a>
+     href="${GL_domain}${num.url}"><i><i class="${num.icon}"></i></i>${num.title}</a>
     `
     );
   menu.innerHTML =`
@@ -39,3 +39,6 @@ document.getElementById('menuIcon').addEventListener('click', function () {
         icon.classList.add('fa-bars');
     }
 });
+
+
+console.log("hello")

@@ -1,5 +1,5 @@
-function play() {
-  fetch(`https://tv-web.api.vinasports.com.vn/api/v2/publish/video/?league_id=ec782e59-4c4a-4de2-bc4b-f0beb191f5c1&page_num=1`)
+function play(league_id) {
+  fetch(`https://tv-web.api.vinasports.com.vn/api/v2/publish/video/?league_id=${league_id}&page_num=1`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -14,7 +14,6 @@ function play() {
     });
   }
 
-play()
 
 
 function innerPoster(videos) {
