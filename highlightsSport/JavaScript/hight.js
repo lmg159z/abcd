@@ -1,5 +1,5 @@
 function play() {
-  fetch(`../../../json//tournament.json`)
+  fetch(`../../../json/tournament.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -38,3 +38,4 @@ function generateGolfHTML(data) {
     const container = document.getElementById("container") 
     container.innerHTML = list
 }
+
