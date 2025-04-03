@@ -1,5 +1,5 @@
 
-console.log("hel")
+console.log()
 function play() {
   fetch(`${GL_domain}json/tournament.json`)
     .then(response => {
