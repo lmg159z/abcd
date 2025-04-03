@@ -1,2 +1,2 @@
-var GL_domain = "/abcd/"
+var GL_domain = "/abcd/";
 
